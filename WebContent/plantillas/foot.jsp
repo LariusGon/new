@@ -1,8 +1,14 @@
+</div> <!-- div del nav(content) -->
 <footer>
-
+<br>	
+<br>
+<br>	
+<br>
 	<span class="copy">&copy;Ipartek Servicios Informaticos</span>
 	
 	<!-- Enlaces de paginas estaticas -->
+<br>	
+<br>
 <br>	
 <br>
 		<ul id="list_paginas">
@@ -45,3 +51,4 @@
  
 </body>
 </html>
+

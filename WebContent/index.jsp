@@ -1,7 +1,7 @@
 <jsp:include page="plantillas/head.jsp"></jsp:include>
 <jsp:include page="plantillas/nav.jsp"></jsp:include>
  
-<div id="home">
+<div id="home" class="clearfix">
 	 
 	 <!-- Contenido principal de la pagina -->
 	 <section>
@@ -13,7 +13,7 @@
 	   <input type="button" 
 			  value="Obtener nuevo afortunad@" 
 			  id="btn_ganador" name="btn_ganador" 
-			  onclick="obtener_ganador()"/>
+			  onclick="obtener_ganador();"/>
 	   
 
 		<img alt="dado de seis caras blanco" 
@@ -54,10 +54,14 @@
 	   </section>
 	   <br>
 	   <br>
+	   <br>
+	   <br>
+
 	   <!-- SidBar con contenido no principal -->
 	   <aside>
-	   
+	   	<div id="enlaces">
 	   		<h3>Enlaces de Inter&eacute;s</h3><br>
+	   		
 	   		<ul>
 	   			<li><a href="http://caniuse.com/" target=_blank>CanIUse</a></li>
 	   			<li><a href="http://www.tinymce.com/" target=_blank>TinyMCE</a></li>
@@ -66,7 +70,7 @@
 				<li><a href="http://librosweb.es/libro/css/" target="_blank">CSS B&aacute;sico</a></li>
 				<li><a href="http://librosweb.es/libro/css_avanzado/" target="_blank">CSS Avzanzado</a></li>
 	   		</ul>
-	   		
+	   	</div>
 	   </aside>
 	   
 	   <br>

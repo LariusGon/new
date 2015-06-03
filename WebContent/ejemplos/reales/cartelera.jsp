@@ -17,7 +17,7 @@
   
 </head>
 
-<body>
+<body class="clearfix">
  
 <div id="container">
   <div id="cartelera">
@@ -26,25 +26,32 @@
 		
 		<ul>
 			<li>
+			
 			<h2>D&oacute;nde est&aacute; NO&Eacute;?</h2>				
 				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
 					
 					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/upsdndeestno/cartelera.jpg" />
 				</a>	
 			
-				
-			<div id="ficha">
+			<div id="ficha">	
+			
 				<p><span class="destacado">Autor:</span> David Lynch </p>
 				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
 				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
 			</div>
-			
+			</li>
 			<li>
 			<h2>A cambio de Nada</h2>
 				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
 					
 					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/acambiodenada/cartelera.jpg" />
 				</a>
+			<div id="ficha">	
+			
+				<p><span class="destacado">Autor:</span> David Lynch </p>
+				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
+				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
+			</div>
 			</li>
 			
 			<li>
@@ -52,7 +59,13 @@
 				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
 					
 					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/upsdndeestno/cartelera.jpg" />
-				</a>	
+				</a>
+			<div id="ficha">	
+			
+				<p><span class="destacado">Autor:</span> David Lynch </p>
+				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
+				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
+			</div>
 			</li>		
 			
 			<li>
@@ -61,13 +74,25 @@
 					
 					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/acambiodenada/cartelera.jpg" />
 				</a>
+			<div id="ficha">	
+			
+				<p><span class="destacado">Autor:</span> David Lynch </p>
+				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
+				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
+			</div>
 			</li>
 			<li>	
 			<h2>D&oacute;nde est&aacute; NO&Eacute;?</h2>			
 				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
 					
 					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/upsdndeestno/cartelera.jpg" />
-				</a>	
+				</a>
+			<div id="ficha">	
+			
+				<p><span class="destacado">Autor:</span> David Lynch </p>
+				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
+				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
+			</div>	
 			</li>		
 			
 			<li>

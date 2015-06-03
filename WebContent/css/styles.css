@@ -11,6 +11,13 @@
 */
 @import url("reset.css");
 
+/***************************** 
+      ClearFix
+*******************************/
+
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { *zoom: 1; }
 
 /* 
 
@@ -62,7 +69,7 @@ h1 {
   margin-bottom:20px;
   color: #00cccc;
   font-family: arial;
-  text-align: center;	
+  margin-left: 150px;	
 }
 
 strong{
@@ -88,8 +95,10 @@ fieldset{
 legend{
 	font-weight:bold;
 	font-size: 19px;
-
-	
+ 	
+}
+section {
+	width: 430px;
 }
 article{
 	border: 1px solid #013729;
@@ -113,8 +122,9 @@ footer{
 	padding: 10px 5px;
 	margin-top: 10px;
 }
-  
-/* Validaciones forumlarios
+ 
+
+/* Validaciones formularios
 */
 
 form input[type="text"]:required:valid{
@@ -135,14 +145,14 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td{
 	border:1px solid gray;
 	text-align: center;
 	font-family: arial;
-	font-size: 35px;  
+	font-size: 30px;  
 	color: #0099FF;   
 }
 
 
 .tabla_azul th, .tabla_azul td {
-  padding: 10px;  
-  height: 40px;
+  padding: 8px;  
+  height: 30px;
 
 }
 
@@ -194,25 +204,134 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td{
 	height: 45px;
 }
 
+/************************
+          HEAD 
+*************************/
 
+
+#head{
+	position: fixed;
+	background-color: #FFF; 
+	width: 900px;
+	padding-top: 10px;
+}
+
+#head #logo, #head h1{
+	float:left;
+}
+
+#head h1{
+	color:#00cccc;
+	font-size: 30px;
+	text-align:center;
+}	
+
+#logo img{		
+	width: 50px;
+	height: 50px;
+}
+/************************
+      MENU PRINCIPAL 
+*************************/
+
+	header { 100%; }
+
+	nav * {
+		padding: 0px;
+		margin: 0px;
+	}
+	nav {
+		margin: 0px auto;
+		width: 100%;
+		font-size: 14px;
+		font-family: Arial, Helvetica, sans-serif;
+	}
+	nav ul, nav ol {
+		list-style: none;
+	}
+	nav ul ul {
+		margin: 0px;
+	}
+	nav h2, nav h3 {
+		margin: 0px;
+	}
+	
+	.menu li a, .menu li h2, .menu li h3 {
+		background-color: black;
+		color: white;
+		text-decoration: none;
+		text-align: center;
+		padding: 10px 38px;
+		display: block;
+	}
+	
+	.menu li h2:hover, .menu li h3:hover, .menu li a:hover {
+		background-color: #434343;
+	}
+	.menu > li {
+		float: left;
+	}	
+	.menu li ul {
+		display: none;
+		position: absolute;
+		min-width: 175px;
+	}
+	
+	.menu li:hover > ul{
+		display: block;
+	}
+	
+	.menu li ul li{
+		position: relative;
+	}
+	.menu li ul li ul{
+		right: -175px;
+		top: 0px;
+	}
+	
+	/* contenedor */
+
+#content{
+	  padding-top: 120px;
+}
 /* HOME */
 #home{
 
+
 }
 
+section, aside {
+	float:left;
+}
+
+#btn_ganador {
+	margin-top:10%;
+	font-size:14px;
+}
+
+#enlaces ul{
+	float:left;
+	overflow: hidden;	
+}
+
+#enlaces {
+	margin-top:5%;
+	font-size: 18px;
+}
 /* CARTELERA */
-#cartelera li h3{
+#cartelera li h2{
   color: #0076EC;
   font-family: "dinengschriftstd", "Another Font", generic;
   font-size: 25px;
-  font-weight: bold;  
+  font-weight: bold;
 }
 
-#cartelera li h3:hover{
+#cartelera li h2:hover{
 	color: orange;
 }
 #cartelera{
 	font-size:16px;
+
 }
 
 /* CARTELERA_DETALLE */
@@ -224,8 +343,12 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td{
 
 /* Regla con selector por ID */
 #dado{
-	width:200px;
-	height: 200px;
+	width:80px;
+	height: 230px;
+	width:60%;
+	margin-right:5%;
+	margin-top:20%;
+	margin-bottom:15%;
 }
 
 #encabezado{
@@ -242,15 +365,17 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td{
 	border-right:1px solid gray;
 	border-left:1px solid gray;
 	clear:both;
+	
 }
 
-
-
 #ficha{
-	/*float:left;*/
-	width:580px;
-	min-height: 360px;
-	margin-bottom: 20px;	
+	
+	width:650px;
+	min-height: 150px;
+	margin-bottom: 20px;
+	float:bottom;
+	overflow:hidden;
+	
 	
 }
 
@@ -258,6 +383,12 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td{
 	
 	font-size:20px;
 	line-height:45px;
+
+	
+}
+
+#ficha a{
+	display: inline-block;
 }
 
 #ficha .destacado{

@@ -23,7 +23,7 @@
   
 </head>
 
-<body onload="init();">
+<body>
 
 <div id="container">
 
@@ -33,14 +33,15 @@
   <a href="#">¿Como solucionarlo?</a>
 </noscript>
 
-<header>
+<header id="head">
 
-  <div id="logo">
-  	<a href="" title="Volver a la home">
-  		<img src="img/mundoivaginario_logo.png" alt="dado de 6 caras icono de la App Web"/>
-  	</a>
-  </div>
+  <div class="clearfix">
+  	<div id="logo">
+  		<a href="" title="Volver a la home">
+  			<img src="img/mundoivaginario_logo.png" alt="dado de 6 caras icono de la App Web"/>
+  		</a>
+ 	 </div>
   
   <h1>Ejemplo de HTML5, CSS3 y JS</h1>
+  </div>
   
-</header>
