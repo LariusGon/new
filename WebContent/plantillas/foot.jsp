@@ -1,16 +1,13 @@
 </div> <!-- div del nav(content) -->
-<footer>
+<footer class="clearfix">
+
 <br>	
-<br>
-<br>	
-<br>
+
 	<span class="copy">&copy;Ipartek Servicios Informaticos</span>
 	
 	<!-- Enlaces de paginas estaticas -->
-<br>	
-<br>
-<br>	
-<br>
+		<br>
+		<br>
 		<ul id="list_paginas">
 	  		<li><a href="#">Contacto</a></li>
 	  		<li><a href="#">Aviso Legal</a></li>

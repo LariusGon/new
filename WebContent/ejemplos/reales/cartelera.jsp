@@ -1,130 +1,116 @@
 <!doctype html>
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
-<html lang="es">
 
-<head>
-  <meta charset="utf-8">
-  <title>Cartelera | Listado de peliculas</title>
-  <meta name="description" content="bla vlasasas">
-  <meta name="author" content="Ander Uraga Real">
-
-  <link rel="stylesheet" type="text/css" href="../../css/styles.css?v=1.0">
-
-  <!--[if lt IE 9]>
-  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  
-</head>
-
-<body class="clearfix">
- 
-<div id="container">
   <div id="cartelera">
   <hr>
 		<h1>Cartelera</h1>
 		
-		<ul>
+		<div class="clearfix">
+		
+		<ul data-list="cartelera">
+		
 			<li>
-			
-			<h2>D&oacute;nde est&aacute; NO&Eacute;?</h2>				
-				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
-					
-					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/upsdndeestno/cartelera.jpg" />
-				</a>	
-			
-			<div id="ficha">	
-			
-				<p><span class="destacado">Autor:</span> David Lynch </p>
-				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
-				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
-			</div>
-			</li>
-			<li>
-			<h2>A cambio de Nada</h2>
-				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
-					
-					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/acambiodenada/cartelera.jpg" />
-				</a>
-			<div id="ficha">	
-			
-				<p><span class="destacado">Autor:</span> David Lynch </p>
-				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
-				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
-			</div>
+				<div class="cartel">								
+					<a href="cartelera_detalle.html" title="Ver detalle pelicula">				
+						<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/upsdndeestno/cartelera.jpg" />
+						
+						<div class="titulo">
+							<h2>D&oacute;nde est&aacute; NO&Eacute;?</h2>
+						</div>
+					</a>
+				</div>	
 			</li>
 			
 			<li>
-			<h2>D&oacute;nde est&aacute; NO&Eacute;?</h2>				
-				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
-					
-					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/upsdndeestno/cartelera.jpg" />
-				</a>
-			<div id="ficha">	
-			
-				<p><span class="destacado">Autor:</span> David Lynch </p>
-				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
-				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
-			</div>
+				<div class="cartel">							
+					<a href="cartelera_detalle.html" title="Ver detalle pelicula">					
+						<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/acambiodenada/cartelera.jpg" />
+						
+						<div class="titulo">
+							<h2>A cambio de Nada</h2>
+						</div>
+					</a>
+				</div>
+			</li>			
+			<li>
+				<div class="cartel">			
+					<a href="cartelera_detalle.html" title="Ver detalle pelicula">				
+						<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/aguastranquilas/cartelera.jpg" />
+						
+						<div class="titulo">
+							<h2>Aguas Tranquilas</h2>
+						</div>
+					</a>
+				</div>
+			</li>					
+			<li>
+				<div class="cartel">
+					<a href="cartelera_detalle.html" title="Ver detalle pelicula">					
+						<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/asterixlaresidenciadelosdioses/cartelera.jpg" />
+						
+						<div class="titulo">
+							<h2>Asterix</h2>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="cartel">							
+					<a href="cartelera_detalle.html" title="Ver detalle pelicula">					
+						<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/beginagain/cartelera.jpg" />
+						
+						<div class="titulo">
+							<h2>Begin Again</h2>
+						</div>
+					</a>
+				</div>
+			</li>		
+			<li>
+				<div class="cartel">			
+					<a href="cartelera_detalle.html" title="Ver detalle pelicula">					
+						<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/blackcoal/cartelera.jpg" />
+						
+						<div class="titulo">
+							<h2>Black Coal</h2>
+						</div>
+					</a>
+				</div>
+			</li>
+			<li>
+				<div class="cartel">						
+					<a href="cartelera_detalle.html" title="Ver detalle pelicula">					
+						<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/cazaalasesino/cartelera.jpg" />
+				
+						<div class="titulo">
+							<h2>Caza al Asesino</h2>
+						</div>
+					</a>	
+				</div>
 			</li>		
 			
 			<li>
-			<h2>A cambio de Nada</h2>
-				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
-					
-					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/acambiodenada/cartelera.jpg" />
-				</a>
-			<div id="ficha">	
-			
-				<p><span class="destacado">Autor:</span> David Lynch </p>
-				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
-				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
-			</div>
+				<div class="cartel">		
+					<a href="cartelera_detalle.html" title="Ver detalle pelicula">					
+						<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/conducta/cartelera.jpg" />
+						
+						<div class="titulo">
+							<h2>Conducta</h2>
+						</div>
+					</a>
+				</div>
 			</li>
-			<li>	
-			<h2>D&oacute;nde est&aacute; NO&Eacute;?</h2>			
-				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
-					
-					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/upsdndeestno/cartelera.jpg" />
-				</a>
-			<div id="ficha">	
-			
-				<p><span class="destacado">Autor:</span> David Lynch </p>
-				<p><span class="destacado">Direcci&oacute;n:</span> Steven  </p>
-				<p><span class="destacado">Valoraci&oacute;n:</span> 5/10 </p>
-			</div>	
-			</li>		
-			
 			<li>
-			<h2>A cambio de Nada</h2>
-				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
+				<div class="cartel">							
+					<a href="cartelera_detalle.html" title="Ver detalle pelicula">					
+						<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/elfrancotirador/cartelera.jpg" />
 					
-					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/acambiodenada/cartelera.jpg" />
-				</a>
-			</li>
-			<li>	
-			<h2>D&oacute;nde est&aacute; NO&Eacute;?</h2>			
-				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
-					
-					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/upsdndeestno/cartelera.jpg" />
-				</a>	
+						<div class="titulo">
+							<h2>El Francotirador</h2>
+						</div>
+					</a>
+				</div>	
 			</li>		
-			
-			<li>
-			<h2>A cambio de Nada</h2>
-				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
-					
-					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/acambiodenada/cartelera.jpg" />
-				</a>
-			</li>
-			<li>	
-			<h2>D&oacute;nde est&aacute; NO&Eacute;?</h2>			
-				<a href="cartelera_detalle.html" title="Ver detalle pelicula">
-					
-					<img alt="Cartel de la pelicula X" src="http://www.cinesa.es/Manager/Peliculas/upsdndeestno/cartelera.jpg" />
-				</a>	
-			</li>		
-			
 			
 		</ul>
 		
@@ -133,6 +119,8 @@
   </div> <!-- cartelera -->  
 </div> <!-- container -->  
  
+ 
+ <jsp:include page="../../plantillas/foot.jsp"></jsp:include>
 </body>
 </html>
 

@@ -5,13 +5,14 @@
 	 
 	 <!-- Contenido principal de la pagina -->
 	 <section>
-	 	 <hr>
-	 	 <br>
+
 	   <h2>El afortunado en leer es:</h2>
+	   <br>
+	   <br>
 	   
 	   <label for="btn_ganador" class="numero" id="afortunado" >0</label>
-	   <input type="button" 
-			  value="Obtener nuevo afortunad@" 
+	   <input type="button" class="btn"
+			  value="Click para obtener ganador" 
 			  id="btn_ganador" name="btn_ganador" 
 			  onclick="obtener_ganador();"/>
 	   
@@ -52,10 +53,7 @@
 			</table>
 
 	   </section>
-	   <br>
-	   <br>
-	   <br>
-	   <br>
+
 
 	   <!-- SidBar con contenido no principal -->
 	   <aside>

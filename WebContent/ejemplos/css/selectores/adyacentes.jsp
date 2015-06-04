@@ -38,10 +38,6 @@
 	
 	
 	
-	
-	
-	
-	
 </section>
 
 <jsp:include page="../../../plantillas/foot.jsp"></jsp:include>
