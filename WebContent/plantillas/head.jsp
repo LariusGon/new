@@ -16,6 +16,10 @@
   <link rel="icon" href="mundo_ivaginario.ico" type="image/x-icon">
   
   <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
+  
+  <!--  Añadir css de Fuente Awesome -->
+  
+  <link href="stylesheet" type="css/text" hrefs="fonts/font-awesome-4.3.0/css/font-awesome.css">
 
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -41,7 +45,9 @@
   			<img src="img/mundoivaginario_logo.png" alt="dado de 6 caras icono de la App Web"/>
   		</a>
  	 </div>
-  
+
   <h1>Ejemplo de HTML5, CSS3 y JS</h1>
+  
+
   </div>
   

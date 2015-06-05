@@ -47,6 +47,13 @@
 					<li><a href="ejemplos/css/posicionamiento/float.jsp">Elementos Flotantes</a></li>
 				</ul>
 			</li>
+			<li>
+				<h2>Tecnicas Avanzadas</h2>
+				<ul>
+					<li><a href="ejemplos/tecnicas_avanzadas/fuente.jsp">Fuente</a></li>
+					<li><a href="ejemplos/tecnicas_avanzadas/sprite.jsp">Sprite</a></li>
+				</ul>
+			</li>
 		</ul>
 	</li>
 	

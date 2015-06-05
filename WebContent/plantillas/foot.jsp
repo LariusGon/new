@@ -9,18 +9,18 @@
 		<br>
 		<br>
 		<ul id="list_paginas">
-	  		<li><a href="#">Contacto</a></li>
-	  		<li><a href="#">Aviso Legal</a></li>
+	  		<li><a href="#"> Contacto  |</a></li>
+	  		<li><a href="#"> Aviso Legal</a></li>
 	    </ul>
 	    
 	  	<br>
 	  	<!-- Enlaces para RRSS -->
 	  	
 	  	<ul id="list_rrss">
-	  		<li><a href="#" target="_blank" >Facebook</a></li>
-	  		<li><a href="#" target="_blank">Twitter</a></li>
-	  		<li><a href="#" target="_blank">Youtube</a></li>
-	  		<li><a href="#" target="_blank">Instagram</a></li>
+	  		<li><a href="#" target="_blank" > Facebook  |</a></li>
+	  		<li><a href="#" target="_blank"> Twitter  |</a></li>
+	  		<li><a href="#" target="_blank"> Youtube  |</a></li>
+	  		<li><a href="#" target="_blank"> Instagram</a></li>
 	  	</ul>
 	  	
 </footer>

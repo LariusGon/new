@@ -1,5 +1,6 @@
 <jsp:include page="plantillas/head.jsp"></jsp:include>
 <jsp:include page="plantillas/nav.jsp"></jsp:include>
+
  
 <div id="home" class="clearfix">
 	 
@@ -48,7 +49,7 @@
 				<td>Lara</td>
 				<td>&nbsp;</td>
 				<td>Unai</td>
-				<td>MiKel</td>
+				<td>Mikel</td>
 			</tr>
 			</table>
 
@@ -85,11 +86,11 @@
 <script type="text/javascript" src="js/index.js"></script>
 
 <script>
-init();  <!-- llamada a  la funcion init() de index.js -->
+init();  <!-- llamada a  la funcion init() de index.js-->
 </script>
-	
-	 
-</div> <!-- home -->
+
+</div> <!--home-->
+
 <jsp:include page="plantillas/foot.jsp"></jsp:include>
 
 
