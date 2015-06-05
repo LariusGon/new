@@ -12,15 +12,19 @@
   <meta name="description" content="Mi primera pagina en HTML5, no sera la ultima">
   <meta name="author" content="Larios">
 
-  <link rel="shortcut icon" href="mundo_ivaginario.ico" type="image/x-icon">
-  <link rel="icon" href="mundo_ivaginario.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="img/favicon_ivaginario.ico" type="image/x-icon">
+  <link rel="icon" href="img/favicon_ivaginario.ico" type="image/x-icon">
   
   <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
   
-  <!--  Añadir css de Fuente Awesome -->
+ 	<!--  Añadir css de Fuente Awesome -->
   
-  <link href="stylesheet" type="css/text" hrefs="fonts/font-awesome-4.3.0/css/font-awesome.css">
+  	<link rel="stylesheet" type="css/text" href="fonts/font-awesome-4.3.0/css/font-awesome.css">
 
+	<!--  Custom Icomoon -->
+	
+	<link rel="stylesheet" type="css/text" href="fonts/icomoon/style.css">
+	
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->

@@ -29,10 +29,11 @@
 </div>	<!-- container -->
  
  <!-- jQuery -->
-<script src="/js/jquery-2.1.4.min.js"></script>
+<script src="js/jquery-2.1.4.min.js"></script>
 
-<!-- jQuery UI:user Interfaces -->
+<!-- jQuery UI:user Interfaces 
 <script src="/js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
+-->
 
  <!-- Convertir todos los text areas en TinyMice -->
  

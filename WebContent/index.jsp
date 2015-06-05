@@ -3,10 +3,11 @@
 
  
 <div id="home" class="clearfix">
+
 	 
 	 <!-- Contenido principal de la pagina -->
 	 <section>
-
+		
 	   <h2>El afortunado en leer es:</h2>
 	   <br>
 	   <br>
@@ -55,9 +56,11 @@
 
 	   </section>
 
-
+		
 	   <!-- SidBar con contenido no principal -->
 	   <aside>
+	   		<span class="icon-books fa-2x"></span>
+	   		
 	   	<div id="enlaces">
 	   		<h3>Enlaces de Inter&eacute;s</h3><br>
 	   		
