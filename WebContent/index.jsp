@@ -73,7 +73,7 @@
 				<li><a href="http://librosweb.es/libro/css_avanzado/" target="_blank">CSS Avzanzado</a></li>
 	   		</ul>
 	   	</div>
-	   </aside>
+	  </aside>
 	   
 	   <br>
 	   <br>

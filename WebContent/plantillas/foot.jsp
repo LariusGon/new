@@ -35,7 +35,7 @@
 <script src="/js/jquery-ui-1.11.4.custom/jquery-ui.min.js"></script>
 -->
 
- <!-- Convertir todos los text areas en TinyMice -->
+ <!-- Convertir todos los text areas en cajas de texto, TinyMice -->
  
  <script src="js/tinymce/tinymce.min.js"></script>
 <script>tinymce.init({selector:'textarea'});</script>

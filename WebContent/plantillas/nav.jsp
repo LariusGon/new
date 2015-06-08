@@ -75,8 +75,17 @@
 	<li>
 		<h2>Plugins</h2>
 		<ul>
-			<li><a href="ejemplos/plugins/datatable.jsp">dataTables</a></li>
-			
+			<li><a href="ejemplos/plugins/datatable.jsp">dataTables</a></li>			
+		</ul>
+	</li>
+	<li>
+		<h2>JavaScript</h2>
+		<ul>
+		<li>
+			<h3>Ejemplos Basicos</h3>
+			<ul>
+			<li><a href="ejemplos/javascript/introduccion.jsp">Introduccion</a></li>
+			</ul>			
 		</ul>
 	</li>  
   </ul>

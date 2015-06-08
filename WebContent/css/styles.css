@@ -161,7 +161,7 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	text-align: center;
 	font-family: arial;
 	font-size: 30px;
-	color: #0099FF;
+	color: #29A28F;
 }
 
 .tabla_azul th, .tabla_azul td {
@@ -178,7 +178,7 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 }
 
 .numero {
-	color: #00cccc;
+	color: #29A28F;
 	font-family: arial;
 	font-size: 50px;
 }
@@ -251,8 +251,8 @@ nav * {
 
 	nav {
 	margin: 0px auto;
-	width: 100%;
-	font-size: 14px;
+	width: 107%;
+	font-size: 12px;
 	font-family: Arial, Helvetica, sans-serif;
 	}
 
@@ -396,7 +396,7 @@ border: 1px solid #eeeeee; /*Borde*/
 	overflow: hidden;
 }
 
-	#enlaces {
+#enlaces {
 	margin-top: 5%;
 	font-size: 18px;
 	}

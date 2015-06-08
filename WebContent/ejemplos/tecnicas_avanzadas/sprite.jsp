@@ -1,16 +1,19 @@
 <jsp:include page="../../plantillas/head.jsp"></jsp:include>
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
   
-<section id="sprite">
+<section>
 	
-	<article>
+<h2>CSS Tecnicas Avanzadas</h2>
+	
+	<article>	
 		<header>
-			<h2>Sprite</h2>
-			<p>Una im&aacute;gen en Sprite es un conjunto de im&aacute;genes agrupadas en una sola im&aacute;gen</p>
+			<h1>Sprite</h1>
+			<p>Una imagen en Sprite es un conjunto de imagenes agrupadas en una sola imagen</p>
 		</header>
+
 		
 		<style>
-			.cnt_article ul li {
+			#sprite li {
 				border: 1px solid #000;
 				padding: 15px 40px;
 				background: url('img/sprites/sprite.png') no-repeat 0 0;
@@ -18,31 +21,39 @@
 			}
 			
 			#sprite .pacman {
-				background: url('img/sprites/sprite.png') no-repeat 0 -50px;
+				background-position: no-repeat 0 -50px;
 			}
 			
 			#sprite .fantasma {
-				background: url('img/sprites/sprite.png') no-repeat 0 -100px;
+				background-position: 0 -100px;
 			}
 			
 		</style>
 		
 		<div class="cnt_article">
 			<ul>
-				<li class="pacman">pacman</li>
-				<li class="fantasma">fantasma</li>
-				<li class="robot">robot</li>
+				<li class="pacman">Pacman</li>
+				<li class="fantasma">Fantasma</li>
+				<li class="robot">Robot</li>
 			</ul>
 		</div>
 	
-	</article>
-
 </section>
 
-<footer>
-	<a href="http://formacion.ipartek.com/campus/">Campus Ipartek</a>
-</footer>	
-
+	<div class="cnt_article">			
+			
+			<ul id="sprite">
+				<li class="pacman">Pacman</li>
+				<li class="fantasma">Fantasma</li>
+				<li class="robot">Robot</li>
+			</ul>
+			
+						
+		</div>
+	<footer>
+		<a href="http://formacion.ipartek.com/campus/">Campus Ipartek</a>
+	</footer>	
+		</article>
 
 
 

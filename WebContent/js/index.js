@@ -107,7 +107,7 @@ function obtener_ganador(){
 		celdas[i].style.backgroundColor = 'white';
 	}
 	
-	celdas[num_aleatorio].style.backgroundColor = 'red';
+	celdas[num_aleatorio].style.backgroundColor = '#ff6600';
 	
 	
 }
