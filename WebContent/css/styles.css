@@ -217,7 +217,7 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 #head {
 	position: fixed;
 	background-color: #FFF;
-	width: 900px;
+	width: 1020px;
 	padding-top: 10px;
 	z-index: 100;
 }
@@ -251,8 +251,8 @@ nav * {
 
 	nav {
 	margin: 0px auto;
-	width: 107%;
-	font-size: 12px;
+	width: 120%;
+	font-size: 13px;
 	font-family: Arial, Helvetica, sans-serif;
 	}
 
@@ -472,7 +472,7 @@ Regla con selector por ID
 }
 
 #container {
-	width: 900px;
+	width: 1000px;
 	background-color: #FFF;
 	min-height: 700px;
 	margin: 0 auto;
@@ -546,4 +546,23 @@ Regla con selector por ID
 #tabla_plugin {
 	padding: 0;
 	width: 100%;
+}
+/************************
+	CALCULADORA
+**************************/
+
+#calc {
+	white-space: normal;
+  line-height: normal;
+  font-weight: normal;
+  font-size: medium;
+  font-variant: normal;
+  font-style: normal;
+  color: -webkit-text;
+  text-align: start;
+  display: table;
+  border-collapse: separate;
+  border-spacing: 2px;
+  border-color: grey;
+	
 }
