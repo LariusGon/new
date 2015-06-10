@@ -4,8 +4,8 @@
 
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 
-<form name="Calc">
-<table id="calc" border="4">
+<form name="calc">
+<table class="tabla_calc" border="4">
   <tbody><tr>
     <td colspan="4"> <input type="text" name="Input" size="16">
     </td>
