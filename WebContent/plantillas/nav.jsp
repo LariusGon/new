@@ -84,8 +84,9 @@
 		<li>
 			<h3>Ejemplos Basicos</h3>
 			<ul>
-			<li><a href="ejemplos/javascript/basicos/introduccion.jsp">Introduccion</a></li>
+			<li><a href="ejemplos/javascript/introduccion.jsp">Introduccion</a></li>
 			<li><a href="ejemplos/javascript/basicos/calculadora.jsp">Calculadora</a></li>
+			<li><a href="ejemplos/javascript/test.jsp">QUnit</a></li>
 			</ul>			
 		</ul>
 	</li>  

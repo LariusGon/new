@@ -9,7 +9,7 @@
 		<header>
 			<h1>Absoluto</h1>
 				<p>Al posicionar un elemento de forma absoluta sale del flujo de la p&acute;agina que posiciona 
-				respecto al primer padre que encuentre posicionado de forma NO est&acutetica;. Si no encuentra 
+				respecto al primer padre que encuentre posicionado de forma NO estetica;. Si no encuentra 
 				a nadie, se posiciona respecto al navegador</p>
 			
 		</header>

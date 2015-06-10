@@ -38,7 +38,7 @@
 			</ul>
 		</div>
 	
-</section>
+
 
 	<div class="cnt_article">			
 			

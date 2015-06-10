@@ -17,7 +17,7 @@
 		.cnt_fuente h3 {margin-top:20px;}
 	</style>
 	
-</section>
+
 
 	<div class="cnt_article">
 		<h3>Iconos de diferentes tamanos</h3>
@@ -67,5 +67,6 @@
 		</footer>
 		
 </article>
+</section>
 
 <jsp:include page="../../plantillas/foot.jsp"></jsp:include>

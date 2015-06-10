@@ -551,7 +551,7 @@ Regla con selector por ID
 	CALCULADORA
 **************************/
 
-.tabla_calc {
+table.tabla_calc tr {
 	white-space: normal;
   line-height: normal;
   font-weight: normal;

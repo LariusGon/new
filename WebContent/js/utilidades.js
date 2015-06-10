@@ -112,10 +112,31 @@ function es_par(numero){
 			es_par = 'true'
 		}
 		break;
-		default
+	case "null":
+		if (numero=null){
+			es_par = 'false';
+		}else{
+			es_par = 'true';
 		}
+		break;
+	case "undefined":
+		if (numero=undefined){
+			es_par = 'false';
+		}else{
+			es_par = 'true';
+		}
+		break;
+	case "-2":
+		if (numero = -2){
+			es_par = 'true';
+		}else{
+			es_par = 'false';
+		}
+		break;
+	}
+		
 	//TODO falta de implementar
-	
+
 	return resul;
 	
 }
