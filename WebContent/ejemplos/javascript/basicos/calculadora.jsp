@@ -6,8 +6,16 @@
 <jsp:include page="../../../plantillas/nav.jsp"></jsp:include>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+ <!-- <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">-->
+
+  <!--[if lt IE 9]>
+  <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
+
 </head>
+
+	<h1>Calculadora</h1>
+
 <body>
 
 	<form name="Calc">

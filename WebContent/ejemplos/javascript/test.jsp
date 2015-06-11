@@ -13,6 +13,62 @@
   <script src="..\..\js\utilidades.js"></script>
   
     <script>
+	QUnit.test( "Funciones predefinidas", function( assert ) {
+		assert.ok( escape('Hola Mundo') == 'Hola%20Mundo'	, "'Hola Mundo' escapado" );
+		assert.ok( escape('Hóla Mundo') == 'H%F3la%20Mundo' , "'Hola Mundo' escapado" );
+		
+		assert.ok( (10 + "1") == "101"			, "Sin parseInt 10 + \"1\" = 101");
+		assert.ok( (10 + parseInt("1") ) == 11	, "Con parseInt 10 + \"1\" = 11");
+		
+		assert.ok( isNaN("123abc")		== true	, "123abc No es numero");
+		assert.ok( isNaN("123")			== false, "123 Es numero");
+		
+		var jonWaine1 = new Array("Jon", "Waine", 45);
+		var jonWaine2 = new Array("el bueno el feo el malo", 1973, "ni p idea" );
+		var jonWaineFinal = jonWaine1.concat(jonWaine2);
+		
+		document.write("Contenido de jonWaineFinal: "+jonWaineFinal.join()+"<br/>");
+		
+		var jonWaineOrdenado = jonWaineFinal.sort();
+		document.write("Contenido de jonWaineOrdenado: "+jonWaineOrdenado.join() + "<br/>");
+		
+		var jonWaineInvertido = jonWaineOrdenado.reverse();
+		document.write("Contenido de jonWaineInvertido: "+jonWaineInvertido.join() + "<br/>");
+		
+		
+		assert.ok( jonWaine1[0] == "Jon" 		, "posicion 0 esta 'Jon' ");
+		assert.ok( jonWaine1[1] == "Waine" 		, "posicion 1 esta 'Waine' ");
+		assert.ok( jonWaine1[2] == 45 			, "posicion 2 esta 45 ");
+		assert.ok( jonWaine1.length == 3		, "Longitud del array ==3 ");
+		
+		
+
+		assert.ok( jonWaine2[0] == "el bueno el feo el malo" 	, "posicion 0 esta 'el bueno el feo el malo' ");
+		assert.ok( jonWaine2[1] == 1973 						, "posicion 1 esta 1973 ");
+		assert.ok( jonWaine2[2] == "ni p idea" 					, "posicion 2 esta 'ni p idea' ");
+		
+		var jonWaineFinal = jonWaine1.concat (jonWaine2);
+		
+		var vector1 = new Array(-5, 5, 3, 1, 0);
+		
+		var vector1Ordenado = vector1.sort();
+		document.write("Contenido de vector1Ordenado: "+vector1Ordenado.join() + "<br/>");
+		
+		var vector1Invertido = vector1Ordenado.reverse();
+		document.write("Contenido de vector1Invertido: "+vector1Invertido.join() + "<br/>");
+		
+		
+		var vector2 = new Array("b", "a", "A", "h");
+		var vector2Ordenado = vector2.sort();
+		document.write("Contenido de vector2Ordenado: "+vector2Ordenado.join() + "<br/>");
+		var vector2Invertido = vector2Ordenado.reverse();
+		document.write("Contenido de vector2Invertido: "+vector2Invertido.join() + "<br/>");
+
+	});
+
+
+    
+    //nuestro codigo de test
 	QUnit.test( "calcularPrecio(diaSemana, edad )", function( assert ) {
 		
 		assert.ok ( calcularPrecio("lunes",18)	 	== '2€', 'Lunes, 29 años. El precio es: 2€' );

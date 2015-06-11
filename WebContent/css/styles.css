@@ -551,18 +551,11 @@ Regla con selector por ID
 	CALCULADORA
 **************************/
 
-table.tabla_calc tr {
-	white-space: normal;
-  line-height: normal;
-  font-weight: normal;
-  font-size: medium;
-  font-variant: normal;
-  font-style: normal;
-  color: -webkit-text;
-  text-align: start;
-  display: table;
-  border-collapse: separate;
-  border-spacing: 2px;
-  border-color: grey;
+table.tabla_calc {
+	border: 4px solid gray;	
+}
+table.tabla_calc td{
+	border:1px solid gray;
+	display: table-cell;
 	
 }
