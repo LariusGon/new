@@ -17,7 +17,7 @@
 			<li><a href="ejemplos/nuevos_elementos_html5/hgroup.jsp">Hgroup</a></li>
 			<li><a href="ejemplos/nuevos_elementos_html5/time.jsp">Time</a></li>
 			<li><a href="ejemplos/nuevos_elementos_html5/video.jsp">Video</a></li>
-			<li><a href="ejemplos/nuevos_elementos_html5/proges_meter.jsp">Progress y Meter</a></li>
+			<li><a href="ejemplos/nuevos_elementos_html5/progress_meter.jsp">Progress y Meter</a></li>
 			<li><a href="ejemplos/nuevos_elementos_html5/datalist.jsp">DataList</a></li>
 		</ul>
 	</li>
@@ -87,6 +87,8 @@
 			<li><a href="ejemplos/javascript/introduccion.jsp">Introduccion</a></li>
 			<li><a href="ejemplos/javascript/basicos/calculadora.jsp">Calculadora</a></li>
 			<li><a href="ejemplos/javascript/test.jsp">QUnit</a></li>
+			<li><a href="ejemplos/javascript/basicos/objetos.jsp">Objetos JavaScript</a></li>
+			
 			</ul>			
 		</ul>
 	</li>  

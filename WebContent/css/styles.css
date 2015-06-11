@@ -35,7 +35,7 @@
 */
 
 body {
-	background: url('../img/back2.jpg');
+	background-image: url('../img/back2.jpg');
 	font-family: arial;
 }
 
@@ -110,7 +110,11 @@ legend {
 }
 
 section {
-	width: 430px;
+	width: 435px;
+}
+section h1{
+		-webkit-text-stroke:1px black;
+		font-size:20px;
 }
 
 article {
@@ -128,7 +132,7 @@ video {
 article h1 {
 	background-color: #cccccc;
 	color: #ff9900;
-	font-size: 25px;
+	font-size: 35px;
 	padding: 5px 0;
 }
 
@@ -202,7 +206,15 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 	padding: 20px;
 	border: 1px solid #DDD;
 }
-
+.cnt_article h2{
+	margin-bottom:15px;
+	border-bottom:1px solid #00cccc;
+	color: #00cccc;
+}
+.cnt_article ul{
+	list-style:none;
+	margin-left:20px;
+}
 /*
 	PAGINAS
 	Tendremos una seccion por cada pagina de nuestra Web

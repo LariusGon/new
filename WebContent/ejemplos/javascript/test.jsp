@@ -23,49 +23,49 @@
 		assert.ok( isNaN("123abc")		== true	, "123abc No es numero");
 		assert.ok( isNaN("123")			== false, "123 Es numero");
 		
+ 	});
+		
+	QUnit.test( "Jon Waine", function( assert ) {
 		var jonWaine1 = new Array("Jon", "Waine", 45);
+			assert.ok( jonWaine1[0] == "Jon" 		, "posicion 0 esta 'Jon' ");
+			assert.ok( jonWaine1[1] == "Waine" 		, "posicion 1 esta 'Waine' ");
+			assert.ok( jonWaine1[2] == 45 			, "posicion 2 esta 45 ");
+			assert.ok( jonWaine1.length == 3		, "Longitud del array ==3 ");
+			
 		var jonWaine2 = new Array("el bueno el feo el malo", 1973, "ni p idea" );
+			assert.ok( jonWaine2[0] == "el bueno el feo el malo" 	, "posicion 0 esta 'el bueno el feo el malo' ");
+			assert.ok( jonWaine2[1] == 1973 						, "posicion 1 esta 1973 ");
+			assert.ok( jonWaine2[2] == "ni p idea" 					, "posicion 2 esta 'ni p idea' ");
+			
 		var jonWaineFinal = jonWaine1.concat(jonWaine2);
 		
-		document.write("Contenido de jonWaineFinal: "+jonWaineFinal.join()+"<br/>");
-		
-		var jonWaineOrdenado = jonWaineFinal.sort();
-		document.write("Contenido de jonWaineOrdenado: "+jonWaineOrdenado.join() + "<br/>");
-		
-		var jonWaineInvertido = jonWaineOrdenado.reverse();
-		document.write("Contenido de jonWaineInvertido: "+jonWaineInvertido.join() + "<br/>");
-		
-		
-		assert.ok( jonWaine1[0] == "Jon" 		, "posicion 0 esta 'Jon' ");
-		assert.ok( jonWaine1[1] == "Waine" 		, "posicion 1 esta 'Waine' ");
-		assert.ok( jonWaine1[2] == 45 			, "posicion 2 esta 45 ");
-		assert.ok( jonWaine1.length == 3		, "Longitud del array ==3 ");
-		
-		
-
-		assert.ok( jonWaine2[0] == "el bueno el feo el malo" 	, "posicion 0 esta 'el bueno el feo el malo' ");
-		assert.ok( jonWaine2[1] == 1973 						, "posicion 1 esta 1973 ");
-		assert.ok( jonWaine2[2] == "ni p idea" 					, "posicion 2 esta 'ni p idea' ");
-		
+		//concatenacion
 		var jonWaineFinal = jonWaine1.concat (jonWaine2);
+		assert.ok("Contenido de jonWaineFinal: "+jonWaineFinal.join()+"<br/>");
+		//posicion ordenada
+		var jonWaineOrdenado = jonWaineFinal.sort();
+		assert.ok("Contenido de jonWaineOrdenado: "+jonWaineOrdenado.join() + "<br/>");
+		//posicion invertida
+		var jonWaineInvertido = jonWaineOrdenado.reverse();
+		assert.ok("Contenido de jonWaineInvertido: "+jonWaineInvertido.join() + "<br/>");
 		
+		//vectores ordenados
 		var vector1 = new Array(-5, 5, 3, 1, 0);
 		
 		var vector1Ordenado = vector1.sort();
-		document.write("Contenido de vector1Ordenado: "+vector1Ordenado.join() + "<br/>");
+		assert.ok("Contenido de vector1Ordenado: "+vector1Ordenado.join() + "<br/>");
 		
 		var vector1Invertido = vector1Ordenado.reverse();
-		document.write("Contenido de vector1Invertido: "+vector1Invertido.join() + "<br/>");
+		assert.ok("Contenido de vector1Invertido: "+vector1Invertido.join() + "<br/>");
 		
 		
 		var vector2 = new Array("b", "a", "A", "h");
 		var vector2Ordenado = vector2.sort();
-		document.write("Contenido de vector2Ordenado: "+vector2Ordenado.join() + "<br/>");
+		assert.ok("Contenido de vector2Ordenado: "+vector2Ordenado.join() + "<br/>");
 		var vector2Invertido = vector2Ordenado.reverse();
-		document.write("Contenido de vector2Invertido: "+vector2Invertido.join() + "<br/>");
+		assert.ok("Contenido de vector2Invertido: "+vector2Invertido.join() + "<br/>");
 
-	});
-
+ 	});
 
     
     //nuestro codigo de test
@@ -95,26 +95,23 @@
 		assert.ok ( calcularPrecio("domingo") 		== '10€', 'Domingo. El precio es: 10€' );
 		
 		//parametros incorrectos
-		assert.ok( calcularPrecio("domingo",-30) 	== 'El dia o la edad no son correctos', 'domingo   (-30) años dato incorrecto');
-		assert.ok( calcularPrecio("viernes",30)  	== 'El dia o la edad no son correctos', 'vernes   30 años dato incorrecto');
-		assert.ok( calcularPrecio(null,30)  		== 'El dia o la edad no son correctos', 'null   30 años dato incorrecto');
-		assert.ok( calcularPrecio("null",30) 		== 'El dia o la edad no son correctos', 'null   30 años dato incorrecto');
-	});
-	
+		
+ 	});
   
   	QUnit.test( "es_par(numero)", function( assert ) {
   			
-		assert.ok ( es_par(0),			 "0 es par" );
-		assert.ok ( es_par(2),			 "2 es par" );
+		assert.ok ( es_par,0	== '0', "0 es par" );
+		assert.ok ( es_par,2	== '2',	 "2 es par" );
 		assert.ok ( !es_par(3), 		 "3 NO es par" );
 		assert.ok ( !es_par(null),	 	 "null NO es par" );
 		assert.ok ( !es_par(undefined),  "undefined NO es par" );
-		assert.ok ( es_par(-2), 		 "-2 es par" );
+		assert.ok ( es_par,-2	=='-2',	 "-2 es par" );
 		assert.ok ( !es_par(-3), 		 "-3 NO es par" );
 		assert.ok ( !es_par(2.1),		 "2.1 NO es par" );
-
-
+		
   	});
+
+ 
 		 
 		
 		</script>

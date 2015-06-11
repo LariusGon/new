@@ -16,13 +16,22 @@
 	  	<br>
 	  	<!-- Enlaces para RRSS -->
 	  	
-	  	<ul id="list_rrss">
-	  		<li><a href="#" target="_blank" > Facebook  |</a></li>
-	  		<li><a href="#" target="_blank"> Twitter  |</a></li>
-	  		<li><a href="#" target="_blank"> Youtube  |</a></li>
-	  		<li><a href="#" target="_blank"> Instagram</a></li>
-	  	</ul>
-	  	
+		<ul id="list_rrss" class="clearfix">
+				<li class="facebook">
+					<a href="http://www.facebook.com/#" target="_blank" title="Facebook"></a>
+				</li>
+				<li class="twitter">
+					<a href="http://www.twitter.com/#" target="_blank" title="Twitter"></a>
+				</li>
+				<li class="youtube">
+					<a href="http://www.youtube.com/#" target="_blank" title="YouTube"></a>
+				</li>
+				<li class="instagram">
+					<a href="http://www.instagram.com/#" target="_blank" title="Instagram"></a>
+				</li>
+			</ul>
+			
+			</div>
 </footer>
 
 

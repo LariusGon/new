@@ -2,7 +2,7 @@
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
 
 <article>
-
+<section>
   <header>
   
     <h1>Introduccion</h1>
@@ -132,7 +132,8 @@
 		
 		</div>
 		
-	</header>	
+	</header>
+	</section>	
 </article>
  
 
