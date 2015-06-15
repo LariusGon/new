@@ -2,7 +2,7 @@
 <jsp:include page="../../plantillas/nav.jsp"></jsp:include>
  
  <hr>
- <div id="home">
+ <div id="home" class="clearfix">
  <section>
  	<article>
  	

@@ -88,6 +88,8 @@
 			<li><a href="ejemplos/javascript/basicos/calculadora.jsp">Calculadora</a></li>
 			<li><a href="ejemplos/javascript/test.jsp">QUnit</a></li>
 			<li><a href="ejemplos/javascript/basicos/objetos.jsp">Objetos JavaScript</a></li>
+			<li><a href="ejemplos/javascript/basicos/date.jsp">Date</a></li>
+			<li><a href="ejemplos/javascript/basicos/calendario.jsp">Calendario</a></li>
 			
 			</ul>			
 		</ul>

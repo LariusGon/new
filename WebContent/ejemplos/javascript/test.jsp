@@ -13,12 +13,27 @@
   <script src="..\..\js\utilidades.js"></script>
   
     <script>
+    
+    QUnit.test( "Date - fechas", function( assert ) {
+  	  
+  	  var fecha = new Date (2015, 5, 15);
+  	  
+  	  assert.ok ( convertirFecha (fecha, CORTO) =="15/06/2015" , 'fecha corta' );
+  	  assert.ok ( convertirFecha (fecha, LARGO) =="el 15 de Junio del 2015" , 'fecha larga' );
+  	  assert.ok ( convertirFecha (fecha, 'formato no valido') ==null , 'formato no valido' );
+  	  assert.ok ( convertirFecha (null, CORTO) ==null , 'fecha null' );
+  	  assert.ok ( convertirFecha (undefined, CORTO) ==null , 'fecha undefined' );
+  	  assert.ok ( convertirFecha ('45/ff/2020', CORTO) ==null , 'fecha no correcta' );
+  	  
+    });
+    
+    
 	QUnit.test( "Funciones predefinidas", function( assert ) {
 		assert.ok( escape('Hola Mundo') == 'Hola%20Mundo'	, "'Hola Mundo' escapado" );
 		assert.ok( escape('Hóla Mundo') == 'H%F3la%20Mundo' , "'Hola Mundo' escapado" );
 		
 		assert.ok( (10 + "1") == "101"			, "Sin parseInt 10 + \"1\" = 101");
-		assert.ok( (10 + parseInt("1") ) == 11	, "Con parseInt 10 + \"1\" = 11");
+		assert.ok( (10 + parseInt("1") )== 11	, "Con parseInt 10 + \"1\" = 11");
 		
 		assert.ok( isNaN("123abc")		== true	, "123abc No es numero");
 		assert.ok( isNaN("123")			== false, "123 Es numero");
@@ -27,9 +42,9 @@
 		
 	QUnit.test( "Jon Waine", function( assert ) {
 		var jonWaine1 = new Array("Jon", "Waine", 45);
-			assert.ok( jonWaine1[0] == "Jon" 		, "posicion 0 esta 'Jon' ");
-			assert.ok( jonWaine1[1] == "Waine" 		, "posicion 1 esta 'Waine' ");
-			assert.ok( jonWaine1[2] == 45 			, "posicion 2 esta 45 ");
+			assert.ok( jonWaine1[0] 	== "Jon" 		, "posicion 0 esta 'Jon' ");
+			assert.ok( jonWaine1[1] 	== "Waine" 		, "posicion 1 esta 'Waine' ");
+			assert.ok( jonWaine1[2] 	== 45 			, "posicion 2 esta 45 ");
 			assert.ok( jonWaine1.length == 3		, "Longitud del array ==3 ");
 			
 		var jonWaine2 = new Array("el bueno el feo el malo", 1973, "ni p idea" );

@@ -119,13 +119,7 @@ function es_par(numero){
 			es_par = 'true';
 		}
 		break;
-	case "undefined":
-		if (numero=undefined){
-			es_par = 'false';
-		}else{
-			es_par = 'true';
-		}
-		break;
+
 	case "-2":
 		if (numero = -2){
 			es_par = 'true';
@@ -133,10 +127,63 @@ function es_par(numero){
 			es_par = 'false';
 		}
 		break;
-	}
-		
+	}	
 	//TODO falta de implementar
 
 	return resul;
 	
+}
+
+/**
+* convierte fecha a formato español
+*@param date objeto tipo Date con la fecha a convertir
+*@param formato CORTO: 'dd/mm/aaaa'; LARGO: '1 de enero de 2016'(definimos unas constantes)
+*@retuns {string} cadena de texto con la fecha convertida; si falla retorna NULL
+*/
+
+//declaramos dos variables constantes, en mayusculas, por lo que no se pueden cambiar
+//formatos posibles para las fechas
+const
+CORTO = 'corto';
+const
+LARGO = 'largo';
+
+function convertirFecha(date, formato) {
+
+	var resul = null;
+	var meses = [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
+			'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre',
+			'Diciembre' ];
+	var dia = null;
+	var mes = null;
+
+	if (date instanceof Date && !isNaN(date.valueOf())) {
+
+		if (date.getDate() < 10) {
+			dia = '0' + date.getDate();
+		} else {
+			dia = date.getDate();
+		}
+
+		if ((date.getMonth() + 1) < 10) {
+			mes = '0' + (date.getMonth() + 1);
+		} else {
+			mes = (date.getMonth() + 1);
+		}
+
+		switch (formato) {
+		case CORTO:
+			resul = dia + '/' + mes + '/' + date.getFullYear();
+			break;
+		case LARGO:
+			resul = "el " + dia + " de " + meses[date.getMonth()] + " del "
+					+ date.getFullYear();
+			break;
+		default:
+			resul = null;
+		}
+	}
+
+	return resul;
+
 }

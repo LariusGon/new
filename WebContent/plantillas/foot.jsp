@@ -1,16 +1,15 @@
 </div> <!-- div del nav(content) -->
 <footer class="clearfix">
 
-<br>	
-
-	<span class="copy">&copy;Ipartek Servicios Informaticos</span>
+	<div id="foot">
+		
 	
 	<!-- Enlaces de paginas estaticas -->
 		<br>
 		<br>
-		<ul id="list_paginas">
-	  		<li><a href="#"> Contacto  |</a></li>
-	  		<li><a href="#"> Aviso Legal</a></li>
+		<ul id="list_paginas" class="clearfix">
+	  		<li><a href="#"> Contacto  </a></li>
+	  		<li><a href="#"> |  Aviso Legal</a></li>
 	    </ul>
 	    
 	  	<br>
@@ -29,9 +28,10 @@
 				<li class="instagram">
 					<a href="http://www.instagram.com/#" target="_blank" title="Instagram"></a>
 				</li>
-			</ul>
+		</ul>
 			
-			</div>
+	</div>
+	<span>COPYRIGHT &copy; Ipartek</span>
 </footer>
 
 

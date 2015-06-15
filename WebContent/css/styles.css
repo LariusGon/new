@@ -108,120 +108,30 @@ legend {
 	font-weight: bold;
 	font-size: 19px;
 }
-
-section {
-	width: 435px;
-}
-section h1{
-		-webkit-text-stroke:1px black;
-		font-size:20px;
-}
-
 article {
 	border: 1px solid #013729;
 	padding: 20px;
 	margin-bottom: 25px;
 }
 
-video {
-	width: 200px;
-	height: 112px;
-	border: 1px solid black;
-}
-
 article h1 {
 	background-color: #cccccc;
 	color: #ff9900;
-	font-size: 35px;
+	font-size: 25px;
 	padding: 5px 0;
 }
+
+section h1{
+		-webkit-text-stroke:1px black;
+		font-size:30px;
+}
+
 
 footer {
 	border: 1px solid #DDD;
 	padding: 10px 5px;
 	margin-top: 10px;
 }
-
-
-/************************
-   VALIDACIONES FORMULARIOS 
-*************************/
-
-form input[type="text"]:required:valid {
-	border: 2px solid green;
-}
-
-form input[type="text"]:focus:required:invalid {
-	border: 2px solid red;
-}
-
-/* 
-	ESTILOS REUTILIZABLES
-    Regla con selector por CLASS para usar en todas las pÃ¡ginas
-*/
-
-table.tabla_azul, .tabla_azul tr, .tabla_azul td {
-	border: 1px solid gray;
-	text-align: center;
-	font-family: arial;
-	font-size: 30px;
-	color: #29A28F;
-}
-
-.tabla_azul th, .tabla_azul td {
-	padding: 8px;
-	height: 30px;
-}
-
-.tabla_azul th {
-	color: gray;
-}
-
-.btn_volver {
-	background-color: #ff6600;
-}
-
-.numero {
-	color: #29A28F;
-	font-family: arial;
-	font-size: 50px;
-}
-
-.hightlight {
-	background-color: yellow;
-}
-
-.verde {
-	color: green;
-}
-
-.cartel {
-	float: left;
-	margin-right: 30px;
-	width: 250px;
-	height: auto;
-}
-
-.cnt_article {
-	padding: 20px;
-	border: 1px solid #DDD;
-}
-.cnt_article h2{
-	margin-bottom:15px;
-	border-bottom:1px solid #00cccc;
-	color: #00cccc;
-}
-.cnt_article ul{
-	list-style:none;
-	margin-left:20px;
-}
-/*
-	PAGINAS
-	Tendremos una seccion por cada pagina de nuestra Web
-
-*/
-
-
 
 /************************
           HEAD 
@@ -255,7 +165,6 @@ table.tabla_azul, .tabla_azul tr, .tabla_azul td {
 header { 100%;
 	
 }
-
 nav * {
 	padding: 0px;
 	margin: 0px;
@@ -315,68 +224,113 @@ nav * {
 	right: -175px;
 	top: 0px;
 	}
-	
-/****************
-     FONT AWESOME 
- *****************/
- .fa{
-color: #00cccc; /*Color del icono*/
-background: #eeeeee; /*Fondo del icono*/
-border: 1px solid #333333; /*Borde*/
-font-size: 100px; /*Tamaño del icono*/
-}
-
-.fa:hover{ /*Formato al pasar el ratón por encima*/
-color: orange; /*Color del icono*/
-background: #333333; /*Fondo del icono*/
-border: 1px solid #eeeeee; /*Borde*/
-}
- 
- 
-/****************
-     CONTENEDOR 
- *****************/
+/* contenedor */
  
 #content {
 	padding-top: 120px;
+}	
+
+
+/*********************
+		FOOTER
+**********************/
+
+#list_paginas li {
+	float: left;	
+	text-decoration: none;
 }
-/* HOME */
-#home section, #home aside {
+#list_paginas {
+	list-style: none;
+	margin: 0px;
+	padding-right: 40px;
+}
+#foot{
+	display: block;
+	margin: 0 auto;
+	width: 620px;
+	font-size: 15px;
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: white;
+}
+#list_paginas li a, .copy{
+	background-color: white;
+	color: black;
+	text-decoration: none;
+	text-align: center;
+	padding: 10px 10px;
+	display: block;
+}
+	
+#list_rrss li {
 	float: left;
+	list-style: none outside none;
+	border: 2px solid gray;
+}
+	
+#list_rrss li a {
+	background-color: white;
+	background-image: url("../img/social_icons.png");
+	background-repeat: no-repeat;
+	background-size: auto 96px;
+	border: 0 none;
+	color: white;
+	direction: ltr;
+	display: block;
+	height: 49px;
+	width: 49px;
+	overflow: hidden;
+	text-align: left;
+	text-decoration: none;
+	text-indent: -999em;
+	transition: all 0.2s ease 0s;
+}
+		
+#list_rrss li.facebook a {
+	background-position: 0 -49px;
+}
+#list_rrss li.facebook a:hover {
+	background-position: 0 0;
 }
 
-	#home section {width 60%;
-	margin-right: 9%;
-	background-color: #DDD;
-	}
+#list_rrss li.twitter a {
+	background-position: -49px -49px;
+}
+#list_rrss li.twitter a:hover {
+	background-position: -49px 0;
+}
+	
+#list_rrss li.youtube a {
+	background-position: -98px -49px;
+}
+#list_rrss li.youtube a:hover {
+	background-position: -98px -0;
+}
 
-	#home aside {
-	width: 26%;
-	background-color: #DDD;
-	min-height: 300px;
-	padding: 2%;
-	}
-
-	#home aside h3 {
-	color: #29A28F;
-	border-bottom: 1px solid #29A28F; ,
-	argin-bottom: 10px;
-	}
-
-	#home aside ul {
-	list-style-type: none;
-	}
-
-/****************
-    BOTON GANADOR
-******************/
-
-#btn_ganador {
-	margin-top: 10%;
+#list_rrss li.instagram a {
+	background-position: -145px -49px;
+}
+#list_rrss li.instagram a:hover {
+	background-position: -145px 0;
 }
 
 
-	.btn {
+/************************
+   VALIDACIONES FORMULARIOS 
+*************************/
+
+form input[type="text"]:required:valid {
+	border: 2px solid green;
+}
+
+form input[type="text"]:focus:required:invalid {
+	border: 2px solid red;
+}
+
+/* 
+	ESTILOS REUTILIZABLES
+    Regla con selector por CLASS para usar en todas las pÃ¡ginas
+*/
+.btn {
 	background: #29A28F;
 	background-image: -webkit-linear-gradient(top, #29A28F, #29A28F);
 	background-image: -moz-linear-gradient(top, #29A28F, #29A28F);
@@ -403,16 +357,95 @@ border: 1px solid #eeeeee; /*Borde*/
 	text-decoration: none;
 }
 
-#enlaces ul {
-	float: left;
-	overflow: hidden;
+table.tabla_azul, .tabla_azul tr, .tabla_azul td {
+	border: 1px solid gray;
+	text-align: center;
+	font-family: arial;
+	font-size: 30px;
+	color: #29A28F;
 }
 
-#enlaces {
-	margin-top: 5%;
-	font-size: 18px;
+.tabla_azul th, .tabla_azul td {
+	padding: 8px;
+	height: 30px;
+}
+
+.tabla_azul th {
+	color: gray;
+}
+
+.btn_volver {
+	background-color: #ff6600;
+}
+
+.numero {
+	color: #29A28F;
+	font-family: arial;
+	font-size: 50px;
+}
+
+.hightlight {
+	background-color: yellow;
+}
+
+.verde {
+	color: green;
+}
+
+.cartel {
+	float: left;
+	margin-right: 30px;
+	width: 250px;
+	height: auto;
+}
+
+.cnt_article {
+	padding: 20px;
+	border: 1px solid #DDD;
+}
+.cnt_article h2{
+	margin-bottom:15px;
+	border-bottom:1px solid #00cccc;
+	color: #00cccc;
+}
+.cnt_article ul{
+	list-style:none;
+	margin-left:20px;
+}
+
+/*
+	PAGINAS
+	Tendremos una seccion por cada pagina de nuestra Web
+
+*/
+
+/* HOME */
+#home section, #home aside {
+	float: left;
+}
+
+	#home section {
+	width: 42%;
+	margin-right: 20%;
+	background-color: #DDD;
 	}
 
+	#home aside {
+	width: 32%;
+	background-color: #DDD;
+	min-height: 300px;
+	padding: 2%;
+	}
+
+	#home aside h3 {
+	color: #29A28F;
+	border-bottom: 1px solid #29A28F; ,
+	argin-bottom: 10px;
+	}
+
+	#home aside li {
+	list-style-type: none;
+	}
 /************** 
     CARTELERA
  *************/
@@ -457,15 +490,12 @@ border: 1px solid #eeeeee; /*Borde*/
 	display: block;
 	}
 
-/******************
- CARTELERA_DETALLE 
- *******************/
+/* catelera detalle */
 
 #cartelera_detalle h1 {
 	color:  #00cccc;
 	text-align: center;
 }
-
 /*************************
 Regla con selector por ID
 ***************************/
@@ -523,27 +553,52 @@ Regla con selector por ID
 	overflow: scroll;
 }
 
-#list_paginas ul {
-	list-style-type: none;
-	text-align: center;
+
+
+
+
+
+/****************
+     FONT AWESOME 
+ *****************/
+ .fa{
+color: #00cccc; /*Color del icono*/
+background: #eeeeee; /*Fondo del icono*/
+border: 1px solid #333333; /*Borde*/
+font-size: 100px; /*Tamaño del icono*/
 }
 
-#list_rrss ul {
-	list-style-type: none;
-	text-align: center;
+.fa:hover{ /*Formato al pasar el ratón por encima*/
+color: orange; /*Color del icono*/
+background: #333333; /*Fondo del icono*/
+border: 1px solid #eeeeee; /*Borde*/
+}
+ 
+ 
+
+
+/****************
+    BOTON GANADOR
+******************/
+
+#btn_ganador {
+	margin-top: 10%;
 }
 
-#list_rrss li {
-	display: inline;
-	text-align: center;
-	margin: 0 10px 0 0;
+
+	
+
+#enlaces ul {
+	float: left;
+	overflow: hidden;
 }
 
-#list_paginas li {
-	display: inline;
-	text-align: center;
-	margin: 0 10px 0 0;
-}
+#enlaces {
+	margin-top: 5%;
+	font-size: 18px;
+	}
+
+
 
 #figure {
 	color: green;

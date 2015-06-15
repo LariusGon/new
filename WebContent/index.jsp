@@ -9,8 +9,7 @@
 	 <section>
 		
 	   <h2>El afortunado en leer es:</h2>
-	   <br>
-	   <br>
+
 	   
 	   <label for="btn_ganador" class="numero" id="afortunado" >0</label>
 	   <input type="button" class="btn"
@@ -61,7 +60,6 @@
 	   <aside>
 	   		<span class="icon-books fa-2x"></span>
 	   		
-	   	<div id="enlaces">
 	   		<h3>Enlaces de Inter&eacute;s</h3><br>
 	   		
 	   		<ul>
@@ -72,17 +70,8 @@
 				<li><a href="http://librosweb.es/libro/css/" target="_blank">CSS B&aacute;sico</a></li>
 				<li><a href="http://librosweb.es/libro/css_avanzado/" target="_blank">CSS Avzanzado</a></li>
 	   		</ul>
-	   	</div>
+
 	  </aside>
-	   
-	   <br>
-	   <br>
-	   <br>
-	   <br>
-	   <br>
-	   <br>
-	   <br>
-	   <br>
 	   
 	   
 
