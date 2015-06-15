@@ -4,10 +4,19 @@
 
 */
 //Se ejecuta cuando todo el HTML se ha cargado
+$(function() {
+	
+	console.debug('document ready!');
+	
+	 $('#select').filterByText($('#textbox'), false);
 
-  $(function() {
-    console.debug('document ready!');
+    // asociar a todos los elementos con clase 'fecha'
+	// el datePicker de Jquery UI
     
-    $('#select').filterByText($('#textbox'), false);
-    
+	 $(".fecha").datepicker();
+	 $("input[data-widget='calendario']").datepicker();
+	 
+	 console.debug('datePicker habilitado');
+	 
+	 
   });

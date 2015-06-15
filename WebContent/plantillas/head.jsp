@@ -17,6 +17,9 @@
   
   <link rel="stylesheet" type="text/css" href="css/styles.css?v=1.0">
   
+   <!-- JQueryUi  -->
+  <link rel ="stylesheet" type ="text/css" href = "js/jquery-ui-1.11.4.custom/jquery-ui.min.css">
+  
  	<!--  Añadir css de Fuente Awesome -->
   
   	<link rel="stylesheet" type="css/text" href="fonts/font-awesome-4.3.0/css/font-awesome.css">

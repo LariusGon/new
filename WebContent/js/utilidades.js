@@ -154,17 +154,19 @@ function convertirFecha(date, formato) {
 	var meses = [ 'Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio',
 			'Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre',
 			'Diciembre' ];
-	var dia = null;
+	var dia = null; //si hubiesemos puesto el día reflejado en la fecha si lo incluiriamos
 	var mes = null;
 
-	if (date instanceof Date && !isNaN(date.valueOf())) {
-
+	if (date instanceof Date  //comprueba parametro tipo date
+			&& !isNaN(date.getDate()) ) { //comprueba que debe ser numero; es por si la variable que se mete no es un numero
+		
+		//concatenar '0' si el dia es menor a 10 para conseguir 2 digitos,ej:03
 		if (date.getDate() < 10) {
 			dia = '0' + date.getDate();
 		} else {
 			dia = date.getDate();
 		}
-
+		//mima jugada para el mes,pero se pone +1 porque empiezan a contar de 0 los meses
 		if ((date.getMonth() + 1) < 10) {
 			mes = '0' + (date.getMonth() + 1);
 		} else {
@@ -180,10 +182,11 @@ function convertirFecha(date, formato) {
 					+ date.getFullYear();
 			break;
 		default:
-			resul = null;
+			resul = null; //todo lo que no sea fecha nos va a retornar null
 		}
 	}
 
 	return resul;
 
 }
+

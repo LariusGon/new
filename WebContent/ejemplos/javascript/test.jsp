@@ -20,10 +20,14 @@
   	  
   	  assert.ok ( convertirFecha (fecha, CORTO) =="15/06/2015" , 'fecha corta' );
   	  assert.ok ( convertirFecha (fecha, LARGO) =="el 15 de Junio del 2015" , 'fecha larga' );
-  	  assert.ok ( convertirFecha (fecha, 'formato no valido') ==null , 'formato no valido' );
-  	  assert.ok ( convertirFecha (null, CORTO) ==null , 'fecha null' );
-  	  assert.ok ( convertirFecha (undefined, CORTO) ==null , 'fecha undefined' );
-  	  assert.ok ( convertirFecha ('45/ff/2020', CORTO) ==null , 'fecha no correcta' );
+  	  
+  	  assert.ok ( convertirFecha (fecha, 'formato no valido') 	==null , 'formato no valido' );
+  	  assert.ok ( convertirFecha (null, CORTO) 					==null , 'fecha null' );
+  	  assert.ok ( convertirFecha (undefined, CORTO) 			==null , 'fecha undefined' );
+  	  assert.ok ( convertirFecha ('45/ff/2020', CORTO) 			==null , 'fecha no correcta' );
+  	  
+	  var fechaInvalida = new Date ('45/ff/2020')
+	  assert.ok ( convertirFecha (fechaInvalida, CORTO) 		==null , 'fecha no valida' );
   	  
     });
     
