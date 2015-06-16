@@ -71,25 +71,36 @@
 			<li><a href="ejemplos/formularios/login.jsp">Login</a></li>			
 			<li><a href="ejemplos/formularios/datos_personales.jsp">Datos Personales</a></li>
 		</ul>
-	</li>  
-	<li>
-		<h2>Plugins</h2>
-		<ul>
-			<li><a href="ejemplos/plugins/datatable.jsp">dataTables</a></li>			
-		</ul>
+	</li> 
+	<li>		
+			<a href="ejemplos/javascript/basicos/eventos.jsp"><h2>Eventos</h2></a>		
 	</li>
+
 	<li>
 		<h2>JavaScript</h2>
 		<ul>
 		<li>
-			<h3>Ejemplos Basicos</h3>
+			<h3>Basicos</h3>
 			<ul>
 			<li><a href="ejemplos/javascript/introduccion.jsp">Introduccion</a></li>
-			<li><a href="ejemplos/javascript/basicos/calculadora.jsp">Calculadora</a></li>
-			<li><a href="ejemplos/javascript/test.jsp">QUnit</a></li>
 			<li><a href="ejemplos/javascript/basicos/objetos.jsp">Objetos JavaScript</a></li>
 			<li><a href="ejemplos/javascript/basicos/date.jsp">Date</a></li>
+			<li><a href="ejemplos/javascript/basicos/calculadora.jsp">Calculadora</a></li>
+		
+			<li><a href="ejemplos/javascript/basicos/ejercicio.jsp">Ejercicios</a></li>
 			
+			<li>
+				<h3>Plugins</h3>
+				<ul>
+					<li><a href="ejemplos/plugins/datatable.jsp">dataTables</a></li>			
+				</ul>
+			</li>
+			<li>
+				<h3>Test</h3>
+				<ul>
+					<li><a href="ejemplos/javascript/test.jsp">QUnit</a></li>
+				</ul>
+			</li>
 			</ul>			
 		</ul>
 	</li>  
