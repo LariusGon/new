@@ -5,6 +5,8 @@
 <head>
 
  <base href="/HolaUniv/">		
+ 
+ <!-- <base href="<%=request.getContextPath() %>/"> para que se nos vaya cmabiando el hola univ automaticamente-->
 
   <meta charset="utf-8">
 

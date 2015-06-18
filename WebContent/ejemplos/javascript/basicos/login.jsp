@@ -9,20 +9,20 @@
 		</header>
 			
 		<div class="cnt_article">
-		<form id="form_id" method="post" name="myform">
-			<label>Usuario :</label>
-			<input type="text" name="username" id="username"/><br/><br/>
-			<label>Password :</label>
-			<input type="password" name="password" id="password"/><br/><br/>
+		<form id="formulario" method="post" name="formulario">
+			<label for="usuario">Usuario :</label>
+			<input type="text" name="nombre" id="nombre" value="" onclick="alert('recuerda escribir en minusculas')"/><br/><br/>
+			<label for="password">Password :</label>
+			<input type="password" name="password" id="password"onclick="alert('si no la recuerdas te la enviamos')"/><br/><br/>
 			<input type="button" value="Login" id="submit" onclick="validate()"/>
 		</form>
 		
 		<script>
 		//Función que nos envía a la página oculta
-			var attempt = 3; // numero de intentos
+			//var attempt = 3; // numero de intentos
 			// Below function Executes on click of login button.
 			function validate(){
-			var username = document.getElementById("username").value;
+			var username = document.getElementById("nombre").value;
 			var password = document.getElementById("password").value;
 			if ( username == "larios" && password == "larios123"){
 			alert ("Has dau en el clavo!");
