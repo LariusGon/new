@@ -12,6 +12,9 @@
 					<textarea id="txt" cols="50" rows="20"></textarea>
 				</div>
 				<div class="col2">
+				<!-- con el return false, evitamos que se envie -->
+				<form action="#" method="post" onsubmit="validar(this); return false;">
+				
 					<input type="button" id="boton" value="Pulsame">
 					<input type="button" id="clear" value="Limpiar">
 					
@@ -40,6 +43,97 @@
 						<input type="checkbox" name="con" value="2" id="css3">
 						<label for="css3">CSS3</label>
 					</fieldset>
+					
+					<!-- Botones -->
+					<input type="submit" value="Guardar">
+					<input type="reset"  value="Limpiar">
+					
+				</form>
+					
+			</div> <!-- cierre de col2 -->
+		</div>  <!-- cnt cols -->
+			
+			<script type="text/javascript">
+				
+				/**
+					- VALIDACIÓN DEL FORMULARIO - 
+					si retorno true se submita
+					si retorno false NO se submita
+					
+					Estado inicial: 
+							Sexo 			- indefinido
+							conocimientos 	- sin checkear
+					Validaciones:
+						
+							Texto: entre 5 y 255 caracteres
+							Sexo indeterminado: sin conocimientos obligatorios
+							Sexo hombre		  : minimo 1 conocimiento
+							Sexo mujer		  : minimo 2 conocimiento
+							
+					Fedback para el usuario: caja de texto mostrando los elementos
+				*/
+				
+				function validar(formulario){
+					var resul = false;//por defecto que no se envie
+					var validacion_texto = false;
+					var validacion_conoc = false;
+					
+					//Texto entre 5 y 255 caracteres
+					var input_texto = formulario.texto;
+					var input_texto_longitud = input_texto.value.length;
+					
+					if ((input_texto_longitud < 5) || (input_texto_longitud > 255)){
+						//mostrar mensaje de error
+						console.error('longitud de texto erronea');
+					}else{
+						validacion_texto = true;
+						console.debug('longitud texto OK');
+					}
+					
+					//validar conocimientos
+					var con = formulario.con;
+					var contador_conocimientos = 0;
+					
+					for(i=0; i < con.length; i++){
+						console.debug('conocimientos' + contador_conocimientos);
+						
+						if (con[i].checked == true){
+							contador_conocimientos++;
+						}
+					}					
+						switch (formulario.sexo.value){
+						case 'M':
+							if ( contador_conocimientos < 2){
+								console.error('conocimientos insuficientes');
+							}else{
+								console.debug('conocimientos suficientes');
+								validacion_conoc = true;
+							}
+							break;
+						case 'H':
+							if (contador_conocimientos < 1){
+								console.error('conocimientos insuficientes');
+							}else{
+								console.debug('conocimientos suficientes');
+								validacion_conoc = true;
+							}
+							break;
+						}//end for
+													
+					
+					//Si todo correcto submitar formulario
+					if (validacion_texto && validacion_conoc ){
+						if (confirm ('aceptas o cancelas?')== true){
+							formulario.submit();
+						}else{
+							alert('ha cancelado el envio');
+						}
+						
+					}else{
+						console.error('algo esta mal');
+					}	
+					return resul;
+				}
 					
 				</div>
 			</div>

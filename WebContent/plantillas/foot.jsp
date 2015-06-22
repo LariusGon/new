@@ -34,6 +34,11 @@
 	<span>COPYRIGHT &copy; Ipartek</span>
 </footer>
 
+	<!-- Boton para ir hasta la cabecera de la pagina -->
+	<nav id="top">
+		<a href="#container" title="Ir inicio pagina">Inicio</a>	
+	</nav>
+
 
 </div>	<!-- container -->
  

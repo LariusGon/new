@@ -13,6 +13,9 @@
   <title>WEB de Prueba</title>
   <meta name="description" content="Mi primera pagina en HTML5, no sera la ultima">
   <meta name="author" content="Larios">
+  
+  <!-- ViewPort IMPRESCINDIBLE para RWD -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <link rel="shortcut icon" href="img/favicon_ivaginario.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon_ivaginario.ico" type="image/x-icon">
@@ -32,6 +35,7 @@
 	
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+  <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
   <![endif]-->
   
 </head>

@@ -14,6 +14,12 @@
 /***************************** 
       ClearFix
 *******************************/
+@font-face {
+	font-family: A little sunshine;
+	src: url("../fonts/sunshine/A little sunshine.ttf") format('truetype');
+}
+
+
 .clearfix:before, .clearfix:after {
 	content: "";
 	display: table;
@@ -81,6 +87,7 @@ h1 {
 	color: #00cccc;
 	font-family: arial;
 	text-align: center;
+	font-family: DeliciousRoman;
 }
 
 strong {
@@ -133,6 +140,7 @@ footer {
 	margin-top: 10px;
 }
 
+
 /************************
           HEAD 
 *************************/
@@ -152,11 +160,22 @@ footer {
 	color: #00cccc;
 	font-size: 30px;
 	text-align: center;
+	font-family: A little sunshine;
 }
 
 #logo img {
 	width: 50px;
 	height: 50px;
+}
+
+
+/*Se aplican estas reglas si el ancho tiene 460px o menos*/
+@media screen and (max-width:460px){
+	#head h1 {
+	color: red;
+	font-size:1.2em;
+	}
+	
 }
 
 /************************
@@ -514,7 +533,7 @@ Regla con selector por ID
 }
 
 #container {
-	width: 1000px;
+	width: 1000px; /* recomendable 960px */
 	background-color: #FFF;
 	min-height: 700px;
 	margin: 0 auto;
