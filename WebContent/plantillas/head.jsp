@@ -31,7 +31,7 @@
 
 	<!--  Custom Icomoon -->
 	
-	<link rel="stylesheet" type="css/text" href="fonts/icomoon/style.css"
+	<link rel="stylesheet" type="css/text" href="fonts/icomoon/style.css">
 	
 	<!-- http://responsive-nav.com/ -->
     <link rel="stylesheet" href="js/responsive_nav/responsive-nav.css">
