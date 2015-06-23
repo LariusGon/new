@@ -34,10 +34,12 @@
 	<span>COPYRIGHT &copy; Ipartek</span>
 </footer>
 
-	<!-- Boton para ir hasta la cabecera de la pagina -->
-	<nav id="top">
-		<a href="#container" title="Ir inicio pagina">Inicio</a>	
-	</nav>
+<!-- Boton para ir hasta la cabecera de la pagina -->
+			<nav id="nav_top">
+				<a href="<%=request.getRequestURL()%>#container" title="Ir inicio pagina">
+					<i class="fa fa-arrow-circle-up fa-4x"></i>
+				</a>
+			</nav>
 
 
 </div>	<!-- container -->
@@ -58,6 +60,12 @@
 
   <!--  Filter plugin -->
  <script src="js/filter_by_text.js"></script>
+ 
+ <!--http://responsive-nav.com/  -->
+ <script src="js/responsive-nav/responsive-nav.min.js" ></script> 
+ <script>
+   var nav = responsiveNav(".nav-collapse");
+ </script>
 	
  <!-- Custom JavaScrip despues de cargar todas las librerias; todo el codigo que necesitemos lo vamos a meter en el main -->
  <script src="js/main.js"></script>

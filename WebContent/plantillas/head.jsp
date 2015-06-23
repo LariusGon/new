@@ -15,7 +15,7 @@
   <meta name="author" content="Larios">
   
   <!-- ViewPort IMPRESCINDIBLE para RWD -->
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no"" />
 
   <link rel="shortcut icon" href="img/favicon_ivaginario.ico" type="image/x-icon">
   <link rel="icon" href="img/favicon_ivaginario.ico" type="image/x-icon">
@@ -31,7 +31,11 @@
 
 	<!--  Custom Icomoon -->
 	
-	<link rel="stylesheet" type="css/text" href="fonts/icomoon/style.css">
+	<link rel="stylesheet" type="css/text" href="fonts/icomoon/style.css"
+	
+	<!-- http://responsive-nav.com/ -->
+    <link rel="stylesheet" href="js/responsive_nav/responsive-nav.css">
+	
 	
   <!--[if lt IE 9]>
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>

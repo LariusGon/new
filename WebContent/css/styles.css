@@ -645,3 +645,31 @@ table.tabla_calc td{
 	display: table-cell;
 	
 }
+
+/***********************************************************
+                   reglas media querys 
+************************************************************/
+
+
+/* Se aplican estan reglas si el ancho es menor que 460px */
+@media screen and (max-width:460px) {
+	
+	#head h1 {
+		color: red;
+		font-size: 1.2em;		
+	}
+	
+	#nav_top{
+		  display: inline;
+		  
+		  position: fixed;		  
+		  bottom: 10px;
+		  right: 10px;
+		  		  
+		  width: 45px;
+		  height: 45px;		  
+	}
+		
+}
+/*  nav_top */
+#nav_top{ display: none; }	
